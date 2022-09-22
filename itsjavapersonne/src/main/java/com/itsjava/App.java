@@ -13,7 +13,7 @@ public class App
         Personne p1 = new Personne();
         Personne p2 = new Personne("DOE", "Jhon", new GregorianCalendar(1998,9,8));
 
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in, "UTF-8");
         System.out.println("Quel est votre nom ? >> ");
         String nom = in.nextLine();
         System.out.println("Quel est votre prénom ? >> ");
