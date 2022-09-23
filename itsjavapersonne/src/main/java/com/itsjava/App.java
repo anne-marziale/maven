@@ -3,6 +3,8 @@ package com.itsjava;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
+import com.itsjava.classe.*;
+
 public class App 
 {
     public static void main( String[] args ){
@@ -37,10 +39,17 @@ public class App
         System.out.println(Personne.getNbInstance());
 
         Client c0 = new Client();
-        Client c1 = new Client("Test", "test", new GregorianCalendar(1999,1,1),"E");
+        Client c1 = new Client("Test", "test", new GregorianCalendar(1999,1,1),'E');
 
         System.out.println(Personne.getNbInstance());
-        System.out.println(Client.getNbInstance());
-        
+
+        Poisson poisson = new Poisson(20.0, 1.0, "rouge", "espece");
+        poisson.executer();
+
+        p0.compare(p1);
+        p0.compare(in);
+        p0.compare(c0);
+        p1.compare(c1);
+        p0.compare(poisson);
     }
 }

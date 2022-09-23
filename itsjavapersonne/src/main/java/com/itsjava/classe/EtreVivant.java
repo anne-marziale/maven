@@ -1,4 +1,4 @@
-package com.itsjava;
+package com.itsjava.classe;
 import lombok.Setter;
 import lombok.Getter;
 import lombok.AllArgsConstructor;
@@ -9,18 +9,14 @@ public abstract class EtreVivant {
     private double taille;
     private double masse;
 
-    // Constructeur
-    public EtreVivant(double taille, double masse) {
-        this.taille = taille;
-        this.masse = masse;
-    }
+    // Constructeur généré par Lombok
 
     // Méthodes de class
     public abstract void parler();
     public abstract void seDeplacer();
     public abstract void respirer();
     public abstract void dormir();
-    public abstract void mourir();
+    public abstract void mourrir();
 
     //GETTER SETTER généré par lombok
 
