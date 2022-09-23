@@ -35,5 +35,12 @@ public class App
         p2.affichage(true);
 
         System.out.println(Personne.getNbInstance());
+
+        Client c0 = new Client();
+        Client c1 = new Client("Test", "test", new GregorianCalendar(1999,1,1),"E");
+
+        System.out.println(Personne.getNbInstance());
+        System.out.println(Client.getNbInstance());
+        
     }
 }
